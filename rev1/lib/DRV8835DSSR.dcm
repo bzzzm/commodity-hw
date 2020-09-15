@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DRV8835DSSR
+D Dual Low Voltage H-Bridge 1.5A WSON12EP Texas Instruments DRV8835DSSR Stepper Motor Driver IC, 11 V 1.5A, 12-Pin WSON
+K
+F http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=drv8835&fileType=pdf
+$ENDCMP
+#
+#End Doc Library

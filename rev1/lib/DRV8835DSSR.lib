@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model DRV8835DSSR
+#/281054/128794/2.47/13/4/Integrated Circuit
+DEF DRV8835DSSR IC 0 30 Y Y 1 F N
+F0 "IC" 1450 300 50 H V L CNN
+F1 "DRV8835DSSR" 1450 200 50 H V L CNN
+F2 "SON50P200X300X80-13N" 1450 100 50 H I L CNN
+F3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=drv8835&fileType=pdf" 1450 0 50 H I L CNN
+F4 "Dual Low Voltage H-Bridge 1.5A WSON12EP Texas Instruments DRV8835DSSR Stepper Motor Driver IC, 11 V 1.5A, 12-Pin WSON" 1450 -100 50 H I L CNN "Description"
+F5 "0.8" 1450 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1450 -300 50 H I L CNN "Manufacturer_Name"
+F7 "DRV8835DSSR" 1450 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "DRV8835DSSR" 1450 -500 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/drv8835dssr/texas-instruments" 1450 -600 50 H I L CNN "Arrow Price/Stock"
+F10 "595-DRV8835DSSR" 1450 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8835DSSR?qs=UFc95S4Z4CYjBOyEmbTDlA%3D%3D" 1450 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+X VM 1 0 0 200 R 50 50 0 0 P
+X AOUT1 2 0 -100 200 R 50 50 0 0 P
+X AOUT2 3 0 -200 200 R 50 50 0 0 P
+X BOUT1 4 0 -300 200 R 50 50 0 0 P
+X BOUT2 5 0 -400 200 R 50 50 0 0 P
+X GND 6 0 -500 200 R 50 50 0 0 P
+X EP 13 800 -1000 200 U 50 50 0 0 P
+X VCC 12 1600 0 200 L 50 50 0 0 P
+X MODE 11 1600 -100 200 L 50 50 0 0 P
+X AIN1/APHASE 10 1600 -200 200 L 50 50 0 0 P
+X AIN2/AENBL 9 1600 -300 200 L 50 50 0 0 P
+X BIN1/BPHASE 8 1600 -400 200 L 50 50 0 0 P
+X BIN2/BENBL 7 1600 -500 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1400 100 1400 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,5 @@
+.idea
+.venv
+venv
+kicad_netlist_reader.py
+*.csv

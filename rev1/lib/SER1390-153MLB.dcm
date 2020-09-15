@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SER1390-153MLB
+D COILCRAFT - SER1390-153MLB - INDUCTOR, 15UH, 6.08A, 20%, 24.3MHZ
+K
+F https://www.coilcraft.com/pdfs/ser1390.pdf
+$ENDCMP
+#
+#End Doc Library

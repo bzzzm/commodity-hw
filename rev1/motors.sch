@@ -1,0 +1,396 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "Commodity - Motors"
+Date "2020-07-10"
+Rev "v1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 4125 2625 2    50   Input ~ 0
+MOT_LF_PWM
+Text GLabel 4125 2725 2    50   Input ~ 0
+MOT_LB_DIR
+Text GLabel 4125 2825 2    50   Input ~ 0
+MOT_LB_PWM
+$Comp
+L Device:C_Small C22
+U 1 1 5F0F14E9
+P 2175 1950
+F 0 "C22" V 2275 1950 50  0000 C CNN
+F 1 "100n" V 2350 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2175 1950 50  0001 C CNN
+F 3 "~" H 2175 1950 50  0001 C CNN
+F 4 "C14663" V 2175 1950 50  0001 C CNN "LCSC"
+	1    2175 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2275 1950 2475 1950
+$Comp
+L power:GND #PWR037
+U 1 1 5F0F2E3B
+P 1975 3000
+F 0 "#PWR037" H 1975 2750 50  0001 C CNN
+F 1 "GND" H 1980 2827 50  0000 C CNN
+F 2 "" H 1975 3000 50  0001 C CNN
+F 3 "" H 1975 3000 50  0001 C CNN
+	1    1975 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1975 1950 2075 1950
+Wire Notes Line
+	1150 1050 10400 1050
+Wire Notes Line
+	10400 1050 10400 4350
+Wire Notes Line
+	1150 1050 1150 4350
+Wire Notes Line
+	1150 4350 10400 4350
+Text Notes 7625 1425 0    118  Italic 0
+Right Motors
+Text Notes 2850 1400 0    118  Italic 0
+Left Motors
+Text Notes 1425 4700 0    118  Italic 0
+Encoders
+$Comp
+L DRV8835DSSR:DRV8835DSSR U2
+U 1 1 5F5F53BF
+P 2525 2325
+AR Path="/5F0903EE/5F5F53BF" Ref="U2"  Part="1" 
+AR Path="/5F0DCA87/5F5F53BF" Ref="U2"  Part="1" 
+F 0 "U2" H 3325 2625 60  0000 C CNN
+F 1 "DRV8835DSSR" H 3350 2500 60  0000 C CNN
+F 2 "lib:SON50P200X300X80-13N" H 2525 2265 60  0001 C CNN
+F 3 "" H 2525 2325 60  0000 C CNN
+F 4 "C129328" H 2525 2325 50  0001 C CNN "LCSC"
+	1    2525 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2200 4700 2200
+$Comp
+L power:GND #PWR035
+U 1 1 5F0F2A01
+P 4700 3000
+F 0 "#PWR035" H 4700 2750 50  0001 C CNN
+F 1 "GND" H 4705 2827 50  0000 C CNN
+F 2 "" H 4700 3000 50  0001 C CNN
+F 3 "" H 4700 3000 50  0001 C CNN
+	1    4700 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2200 4200 2200
+$Comp
+L Device:C_Small C19
+U 1 1 5F0F0B33
+P 4500 2200
+F 0 "C19" V 4271 2200 50  0000 C CNN
+F 1 "100n" V 4362 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4500 2200 50  0001 C CNN
+F 3 "~" H 4500 2200 50  0001 C CNN
+F 4 "C14663" V 4500 2200 50  0001 C CNN "LCSC"
+	1    4500 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR032
+U 1 1 5F0EDE86
+P 4200 1850
+F 0 "#PWR032" H 4200 1700 50  0001 C CNN
+F 1 "+3.3V" H 4215 2023 50  0000 C CNN
+F 2 "" H 4200 1850 50  0001 C CNN
+F 3 "" H 4200 1850 50  0001 C CNN
+	1    4200 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4200 2200
+Wire Wire Line
+	4200 2200 4200 2325
+Wire Wire Line
+	4125 2325 4200 2325
+Wire Wire Line
+	2525 2325 2475 2325
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5FB6A372
+P 5700 3800
+F 0 "JP1" H 5700 3913 50  0000 C CNN
+F 1 "MOT_MODE" H 5700 4004 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5700 3800 50  0001 C CNN
+F 3 "~" H 5700 3800 50  0001 C CNN
+	1    5700 3800
+	-1   0    0    1   
+$EndComp
+Text GLabel 4125 2425 2    50   Input ~ 0
+MOT_LMODE
+Text GLabel 4125 2525 2    50   Input ~ 0
+MOT_LF_DIR
+Wire Wire Line
+	2475 1950 2475 2325
+Wire Wire Line
+	1975 1950 1975 2825
+Connection ~ 1975 2825
+Wire Wire Line
+	1975 2825 1975 3000
+Wire Wire Line
+	4700 2200 4700 3000
+$Comp
+L power:GND #PWR0104
+U 1 1 5FB7C1C9
+P 3325 3325
+F 0 "#PWR0104" H 3325 3075 50  0001 C CNN
+F 1 "GND" H 3330 3152 50  0000 C CNN
+F 2 "" H 3325 3325 50  0001 C CNN
+F 3 "" H 3325 3325 50  0001 C CNN
+	1    3325 3325
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 3800 0    50   Input ~ 0
+MOT_LMODE
+Connection ~ 2475 1950
+Wire Wire Line
+	4200 1850 4200 2200
+Text Notes 6975 6425 0    50   ~ 0
+DRV8835 Dual Low-Voltage H-Bridge IC\n\nDatasheet: https://www.ti.com/lit/ds/symlink/drv8835.pdf\nSample Application: https://www.ti.com/lit/ug/slvu694/slvu694.pdf\nPololu Shield: https://www.pololu.com/file/0J803/drv8835-dual-motor-driver-shield-schematic.pdf\n\n
+Text GLabel 9000 2625 2    50   Input ~ 0
+MOT_RF_PWM
+Text GLabel 9000 2725 2    50   Input ~ 0
+MOT_RB_DIR
+Text GLabel 9000 2825 2    50   Input ~ 0
+MOT_RB_PWM
+$Comp
+L power:GND #PWR0111
+U 1 1 5FBA134B
+P 6850 3000
+F 0 "#PWR0111" H 6850 2750 50  0001 C CNN
+F 1 "GND" H 6855 2827 50  0000 C CNN
+F 2 "" H 6850 3000 50  0001 C CNN
+F 3 "" H 6850 3000 50  0001 C CNN
+	1    6850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRV8835DSSR:DRV8835DSSR U3
+U 1 1 5FBA1358
+P 7400 2325
+F 0 "U3" H 8200 2625 60  0000 C CNN
+F 1 "DRV8835DSSR" H 8225 2500 60  0000 C CNN
+F 2 "lib:SON50P200X300X80-13N" H 7400 2265 60  0001 C CNN
+F 3 "" H 7400 2325 60  0000 C CNN
+F 4 "C129328" H 7400 2325 50  0001 C CNN "LCSC"
+	1    7400 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9475 2200 9575 2200
+$Comp
+L power:GND #PWR0112
+U 1 1 5FBA1365
+P 9575 3000
+F 0 "#PWR0112" H 9575 2750 50  0001 C CNN
+F 1 "GND" H 9580 2827 50  0000 C CNN
+F 2 "" H 9575 3000 50  0001 C CNN
+F 3 "" H 9575 3000 50  0001 C CNN
+	1    9575 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9275 2200 9075 2200
+$Comp
+L Device:C_Small C20
+U 1 1 5FBA136C
+P 9375 2200
+F 0 "C20" V 9146 2200 50  0000 C CNN
+F 1 "100n" V 9237 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9375 2200 50  0001 C CNN
+F 3 "~" H 9375 2200 50  0001 C CNN
+F 4 "C14663" V 9375 2200 50  0001 C CNN "LCSC"
+	1    9375 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 5FBA1372
+P 9075 1850
+F 0 "#PWR0113" H 9075 1700 50  0001 C CNN
+F 1 "+3.3V" H 9090 2023 50  0000 C CNN
+F 2 "" H 9075 1850 50  0001 C CNN
+F 3 "" H 9075 1850 50  0001 C CNN
+	1    9075 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9075 2200
+Wire Wire Line
+	9075 2200 9075 2325
+Wire Wire Line
+	9000 2325 9075 2325
+Wire Wire Line
+	7400 2325 7350 2325
+Text GLabel 9000 2425 2    50   Input ~ 0
+MOT_RMODE
+Text GLabel 9000 2525 2    50   Input ~ 0
+MOT_RF_DIR
+Wire Wire Line
+	7400 2825 6850 2825
+Wire Wire Line
+	6850 2825 6850 3000
+Wire Wire Line
+	9575 2200 9575 3000
+$Comp
+L power:GND #PWR0114
+U 1 1 5FBA138A
+P 8200 3325
+F 0 "#PWR0114" H 8200 3075 50  0001 C CNN
+F 1 "GND" H 8205 3152 50  0000 C CNN
+F 2 "" H 8200 3325 50  0001 C CNN
+F 3 "" H 8200 3325 50  0001 C CNN
+	1    8200 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9075 1850 9075 2200
+Text GLabel 5900 3800 2    50   Input ~ 0
+MOT_RMODE
+$Comp
+L power:VCC #PWR0103
+U 1 1 5F7F5774
+P 2475 1625
+F 0 "#PWR0103" H 2475 1475 50  0001 C CNN
+F 1 "VCC" H 2490 1798 50  0000 C CNN
+F 2 "" H 2475 1625 50  0001 C CNN
+F 3 "" H 2475 1625 50  0001 C CNN
+	1    2475 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 5FBA469B
+P 5700 3650
+F 0 "#PWR0116" H 5700 3500 50  0001 C CNN
+F 1 "+3.3V" H 5715 3823 50  0000 C CNN
+F 2 "" H 5700 3650 50  0001 C CNN
+F 3 "" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	1    0    0    -1  
+$EndComp
+Text Notes 5200 3325 0    118  Italic 0
+Mode Select
+Text Notes 4975 4275 0    50   ~ 0
+MOT_MODE should be soldered by default
+Wire Wire Line
+	1975 2825 2525 2825
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5F427E98
+P 2325 2525
+F 0 "J4" H 2243 2100 50  0000 C CNN
+F 1 "MOT_L" H 2243 2191 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0410_1x04_P1.25mm_Horizontal" H 2325 2525 50  0001 C CNN
+F 3 "~" H 2325 2525 50  0001 C CNN
+F 4 "2779802" H 2325 2525 50  0001 C CNN "Farnell"
+	1    2325 2525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 5F45F730
+P 2175 1700
+F 0 "C18" V 2275 1700 50  0000 C CNN
+F 1 "10u" V 2350 1700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2175 1700 50  0001 C CNN
+F 3 "~" H 2175 1700 50  0001 C CNN
+F 4 "C13585" V 2175 1700 50  0001 C CNN "LCSC"
+	1    2175 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2275 1700 2475 1700
+Wire Wire Line
+	2475 1700 2475 1625
+Wire Wire Line
+	2475 1700 2475 1950
+Connection ~ 2475 1700
+Wire Wire Line
+	2075 1700 1975 1700
+Wire Wire Line
+	1975 1700 1975 1950
+Connection ~ 1975 1950
+$Comp
+L Device:C_Small C29
+U 1 1 5F4626BE
+P 7050 1950
+F 0 "C29" V 7150 1950 50  0000 C CNN
+F 1 "100n" V 7225 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7050 1950 50  0001 C CNN
+F 3 "~" H 7050 1950 50  0001 C CNN
+F 4 "C14663" V 7050 1950 50  0001 C CNN "LCSC"
+	1    7050 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 1950 7350 1950
+Wire Wire Line
+	6850 1950 6950 1950
+Wire Wire Line
+	7350 1950 7350 2325
+Wire Wire Line
+	6850 1950 6850 2825
+Connection ~ 7350 1950
+$Comp
+L power:VCC #PWR036
+U 1 1 5F4626C9
+P 7350 1625
+F 0 "#PWR036" H 7350 1475 50  0001 C CNN
+F 1 "VCC" H 7365 1798 50  0000 C CNN
+F 2 "" H 7350 1625 50  0001 C CNN
+F 3 "" H 7350 1625 50  0001 C CNN
+	1    7350 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C28
+U 1 1 5F4626D0
+P 7050 1700
+F 0 "C28" V 7150 1700 50  0000 C CNN
+F 1 "10u" V 7225 1700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7050 1700 50  0001 C CNN
+F 3 "~" H 7050 1700 50  0001 C CNN
+F 4 "C13585" V 7050 1700 50  0001 C CNN "LCSC"
+	1    7050 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 1700 7350 1700
+Wire Wire Line
+	7350 1700 7350 1625
+Wire Wire Line
+	7350 1700 7350 1950
+Connection ~ 7350 1700
+Wire Wire Line
+	6950 1700 6850 1700
+Wire Wire Line
+	6850 1700 6850 1950
+Connection ~ 6850 1950
+Connection ~ 6850 2825
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5F4286F8
+P 7200 2525
+F 0 "J5" H 7118 2100 50  0000 C CNN
+F 1 "MOT_R" H 7118 2191 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53048-0410_1x04_P1.25mm_Horizontal" H 7200 2525 50  0001 C CNN
+F 3 "~" H 7200 2525 50  0001 C CNN
+F 4 "2779802" H 7200 2525 50  0001 C CNN "Farnell"
+	1    7200 2525
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

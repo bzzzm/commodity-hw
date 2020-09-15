@@ -1,0 +1,38 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model TPS54821RHLR
+#/714793/128794/2.47/15/4/Integrated Circuit
+DEF TPS54821RHLR IC 0 30 Y Y 1 F N
+F0 "IC" 1450 300 50 H V L CNN
+F1 "TPS54821RHLR" 1450 200 50 H V L CNN
+F2 "TPS54622RHLR" 1450 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/tps54821" 1450 0 50 H I L CNN
+F4 "4.5V to 17V Input, 8-A Synchronous Step-Down Converter with Hiccup Current Limit" 1450 -100 50 H I L CNN "Description"
+F5 "" 1450 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1450 -300 50 H I L CNN "Manufacturer_Name"
+F7 "TPS54821RHLR" 1450 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "TPS54821RHLR" 1450 -500 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/tps54821rhlr/texas-instruments" 1450 -600 50 H I L CNN "Arrow Price/Stock"
+F10 "595-TPS54821RHLR" 1450 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS54821RHLR?qs=b6MN4iAoYlzIw75omS6VcA%3D%3D" 1450 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+X RT/CLK 1 0 0 200 R 50 50 0 0 P
+X GND_1 2 0 -100 200 R 50 50 0 0 P
+X GND_2 3 0 -200 200 R 50 50 0 0 P
+X PVIN_1 4 0 -300 200 R 50 50 0 0 P
+X PVIN_2 5 0 -400 200 R 50 50 0 0 P
+X VIN 6 0 -500 200 R 50 50 0 0 P
+X VSENSE 7 0 -600 200 R 50 50 0 0 P
+X COMP 8 0 -700 200 R 50 50 0 0 P
+X SS/TR 9 1600 0 200 L 50 50 0 0 P
+X EN 10 1600 -100 200 L 50 50 0 0 P
+X PH_1 11 1600 -200 200 L 50 50 0 0 P
+X PH_2 12 1600 -300 200 L 50 50 0 0 P
+X BOOT 13 1600 -400 200 L 50 50 0 0 P
+X PWRGD 14 1600 -500 200 L 50 50 0 0 P
+X THERMAL_PAD 15 1600 -600 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1400 100 1400 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

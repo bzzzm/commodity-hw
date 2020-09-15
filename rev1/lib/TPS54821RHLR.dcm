@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS54821RHLR
+D 4.5V to 17V Input, 8-A Synchronous Step-Down Converter with Hiccup Current Limit
+K
+F http://www.ti.com/lit/gpn/tps54821
+$ENDCMP
+#
+#End Doc Library

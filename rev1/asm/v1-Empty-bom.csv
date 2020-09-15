@@ -1,0 +1,16 @@
+Refs,Value,FP
+"H1, H2, H3, H4",MountingHole,MountingHole:MountingHole_2.7mm_M2.5
+J1,SWD Header,Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical
+J3,ESP01 Header,Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical
+J6,5V,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+J7,3.3V,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+J10,UART,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+J11,SPI2,Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical
+J12,RPI Header,Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical
+JP1,MOT_MODE,Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm
+JP2,EEPROM_WP,Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm
+TP1,3.3v,TestPoint:TestPoint_Pad_D1.0mm
+TP2,VBAT,TestPoint:TestPoint_Pad_D1.0mm
+TP3,5V,TestPoint:TestPoint_Pad_D1.0mm
+TP4,RPI 5V,TestPoint:TestPoint_Pad_D1.0mm
+TP5,GND,TestPoint:TestPoint_Pad_D1.0mm
